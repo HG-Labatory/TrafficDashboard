@@ -14,7 +14,7 @@ class TrafficItem(Base):
     """
     # Define the table name
     __tablename__ = "traffic_items"
-    
+
     # Define the columns of the traffic_items table
     id = Column(Integer, primary_key=True)
     category = Column(Text, nullable=False)

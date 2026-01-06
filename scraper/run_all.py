@@ -4,8 +4,7 @@ from datetime import datetime
 from backend.db import SessionLocal
 from backend.models import TrafficItem
 
-from scraper.sources.traffic_news import TrafficNewsScraper
-from scraper.sources.autobahn_news import AutobahnNewsScraper
+from scraper.sources.dvb_rss import DVBRssScraper
 
 # später: weitere Scraper importieren
 
@@ -22,10 +21,9 @@ logger = logging.getLogger(__name__)
 # 2. Scraper registrieren
 # --------------------------------------------------
 SCRAPERS = [
-    AutobahnNewsScraper(),
-    # später: ProjectScraper(), ScienceScraper()
+    DVBRssScraper(),
+    # später: SaechsischeRssScraper(), BMDV-RSS, …
 ]
-
 
 # --------------------------------------------------
 # 3. Hauptfunktion
@@ -52,6 +50,7 @@ def main():
                 continue
 
             for item in items:
+                print("fehler"+item["url"])
                 try:
                     # Prüfen, ob der Eintrag bereits existiert
                     exists = db.query(TrafficItem).filter(TrafficItem.url == item["url"]).first()
