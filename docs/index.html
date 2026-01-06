@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <title>Verkehrs-Dashboard</title>
-
-  <!-- CSS einbinden -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Aktuelle Verkehrsmeldungen</h1>
-  <ul id="news"></ul>
+
+  <h1>Verkehrs-Dashboard</h1>
+
+  <main class="layout">
+
+    <!-- Linke Spalte: Verkehrsmeldungen -->
+    <section class="column">
+      <h2>Verkehrsmeldungen</h2>
+      <ul id="news"></ul>
+    </section>
+
+    <!-- Mittlere Spalte: Verkehrsprojekte -->
+    <section class="column">
+      <h2>Verkehrsprojekte</h2>
+      <p>Noch keine Daten</p>
+    </section>
+
+    <!-- Rechte Spalte: Verkehrswissenschaft -->
+    <section class="column">
+      <h2>Verkehrswissenschaft</h2>
+      <p>Noch keine Daten</p>
+    </section>
+
+  </main>
 
   <script src="app.js"></script>
 </body>
