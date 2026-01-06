@@ -1,3 +1,5 @@
+console.log("app.js geladen");
+
 fetch("data/news.json")
   .then(r => r.json())
   .then(data => {
@@ -5,12 +7,10 @@ fetch("data/news.json")
 
     data.items.forEach(item => {
       const li = document.createElement("li");
-      li.innerHTML = `
-        <a href="${item.url}" target="_blank">
-          ${item.title}
-        </a>
-        <small>(${item.source})</small>
-      `;
+      li.innerHTML = `<a href="${item.url}" target="_blank">
+        ${item.title}
+      </a>`;
       list.appendChild(li);
     });
-  });
+  })
+  .catch(err => console.error(err));
