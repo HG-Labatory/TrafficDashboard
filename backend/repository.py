@@ -14,6 +14,7 @@ def save_items(db, items: list[dict]):
             persist.
     """
     for item in items:
+        # Check for existing item by URL to avoid duplicates
         if db.query(TrafficItem).filter(TrafficItem.url == item["url"]).first():
             continue
 

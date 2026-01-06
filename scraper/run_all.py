@@ -1,14 +1,97 @@
+import logging
+from datetime import datetime
+
 from backend.db import SessionLocal
-from sources.traffic_news import TrafficNewsScraper
-from backend.repository import save_items
+from backend.models import TrafficItem
 
-db = SessionLocal()
+from scraper.sources.traffic_news import TrafficNewsScraper
+from scraper.sources.autobahn_news import AutobahnNewsScraper
 
-scraper = TrafficNewsScraper()
-items = scraper.fetch()
-save_items(db, items)
-
-db.commit()
-db.close()
+# später: weitere Scraper importieren
 
 
+# --------------------------------------------------
+# 1. Logging konfigurieren
+# --------------------------------------------------
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+logger = logging.getLogger(__name__)
+
+
+# --------------------------------------------------
+# 2. Scraper registrieren
+# --------------------------------------------------
+SCRAPERS = [
+    AutobahnNewsScraper(),
+    # später: ProjectScraper(), ScienceScraper()
+]
+
+
+# --------------------------------------------------
+# 3. Hauptfunktion
+# --------------------------------------------------
+def main():
+    logger.info("Scraping gestartet")
+
+    db = SessionLocal()
+    inserted = 0
+    skipped = 0
+    errors = 0
+
+    try:
+        for scraper in SCRAPERS:
+            logger.info(f"Starte Scraper: {scraper.source_name}")
+
+            try:
+                items = scraper.fetch()
+                logger.info(f"   → {len(items)} Einträge gefunden")
+
+            except Exception as e:
+                logger.error(f"❌ Fehler beim Scrapen von {scraper.source_name}: {e}")
+                errors += 1
+                continue
+
+            for item in items:
+                try:
+                    # Prüfen, ob der Eintrag bereits existiert
+                    exists = db.query(TrafficItem).filter(TrafficItem.url == item["url"]).first()
+
+                    if exists:
+                        skipped += 1
+                        continue
+
+                    db_item = TrafficItem(
+                        category=scraper.category,
+                        title=item["title"],
+                        summary=item.get("summary"),
+                        region=item.get("region"),
+                        published_date=item.get("published_date"),
+                        url=item["url"],
+                    )
+
+                    db.add(db_item)
+                    inserted += 1
+
+                except Exception as e:
+                    logger.error(f"❌ DB-Fehler bei URL {item.get('url')}: {e}")
+                    errors += 1
+
+        db.commit()
+        logger.info("💾 Änderungen erfolgreich gespeichert")
+
+    except Exception as fatal:
+        db.rollback()
+        logger.critical(f"🔥 Kritischer Fehler – Rollback: {fatal}")
+
+    finally:
+        db.close()
+        logger.info("🔒 DB-Verbindung geschlossen")
+
+        logger.info(f"✅ Fertig | Neu: {inserted}, " f"Übersprungen: {skipped}, " f"Fehler: {errors}")
+
+
+# --------------------------------------------------
+# 4. Einstiegspunkt
+# --------------------------------------------------
+if __name__ == "__main__":
+    main()

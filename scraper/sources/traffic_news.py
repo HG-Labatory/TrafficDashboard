@@ -23,9 +23,14 @@ class TrafficNewsScraper(BaseScraper):
             list[dict]: A list of traffic news items, each containing
                 title, summary, region, published_date, and url fields.
         """
-        response = requests.get("https://example.de")
-        soup = BeautifulSoup(response.text, "html.parser")
+        # Fetch and parse the traffic news page
+        response = requests.get(
+            "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldungen?tx_kesearch_pi1%5Bsword%5D=&tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5BresetFilters%5D=0&tx_kesearch_pi1%5BshowMap%5D=&tx_kesearch_pi1%5Bfilter_1%5D=&search_terms=&tx_kesearch_pi1%5Bfilter_2%5D=syscat294&search_terms=#search"
+        )
 
+        # Parse the HTML content using BeautifulSoup
+        soup = BeautifulSoup(response.text, "html.parser")
+        print()
         items = []
 
         for entry in soup.select(".news-item"):
