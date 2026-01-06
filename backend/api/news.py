@@ -5,8 +5,6 @@ from backend.models import TrafficItem
 
 router = APIRouter()
 
-
-
 @router.get("/")
 def get_all_news():
     db = SessionLocal()
