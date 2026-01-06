@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Database connection URL
+#traffic_user with the pw traffic
 DATABASE_URL = "postgresql://traffic_user:traffic@localhost/traffic_db"
 
 # Set up the database engine and session factory
