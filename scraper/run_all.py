@@ -1,5 +1,4 @@
 import logging
-from datetime import datetime
 
 from backend.db import SessionLocal
 from backend.models import TrafficItem
@@ -30,6 +29,7 @@ SCRAPERS = [
 # --------------------------------------------------
 def main():
     logger.info("Scraping gestartet")
+
 
     db = SessionLocal()
     inserted = 0
