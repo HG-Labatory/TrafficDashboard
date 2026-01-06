@@ -1,6 +1,8 @@
 # TrafficDashboard
 TrafficDashboard
 
+
+```bash
 ┌──────────────┐
 │   RSS / Web  │
 └──────┬───────┘
@@ -28,3 +30,5 @@ TrafficDashboard
 ┌──────────────────────┐
 │ GitHub Pages (HTML)  │
 └──────────────────────┘
+
+```
