@@ -1,4 +1,4 @@
-fetch("data\news.json")
+fetch("../data/news.json")
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById("news");
