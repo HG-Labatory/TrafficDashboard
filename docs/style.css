@@ -2,38 +2,53 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #f5f7fa;
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
+/* Titel */
 h1 {
-  margin-bottom: 1rem;
-  color: #1f2937;
+  margin-bottom: 1.5rem;
 }
 
-ul#news {
+/* 3-Spalten-Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Einzelne Spalte */
+.column {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Listen */
+#news {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-ul#news li {
-  background: #ffffff;
+#news li {
   margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
-ul#news li a {
+#news a {
   text-decoration: none;
   font-weight: 600;
   color: #2563eb;
 }
 
-ul#news li a:hover {
+#news a:hover {
   text-decoration: underline;
 }
 
-ul#news li small {
-  color: #6b7280;
-  margin-left: 0.5rem;
+/* Responsive: auf kleinen Bildschirmen untereinander */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
 }
