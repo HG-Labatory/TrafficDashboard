@@ -92,12 +92,7 @@ li {
   text-decoration: underline;
 }
 
-.summary {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-  color: #4b5563;
-  line-height: 1.4;
-}
+
 
 /* ===== Responsive ===== */
 @media (max-width: 1000px) {
