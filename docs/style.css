@@ -36,7 +36,7 @@ body {
 /* ===== Layout ===== */
 .layout {
   display: grid;
-  grid-template-columns: 3fr 1.5fr;
+  grid-template-columns: 1.5fr 1.5fr;
   gap: 1.5rem;
   padding: 0 1.5rem 2rem;
 }
