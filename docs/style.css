@@ -3,42 +3,68 @@ body {
   background: #f5f7fa;
   margin: 0;
   padding: 1.5rem;
+  color: #1f2937;
 }
 
+/* ===== Überschriften ===== */
 h1 {
   margin-bottom: 1.5rem;
 }
 
-/* === GRID LAYOUT === */
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+/* ===== GRID LAYOUT ===== */
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 👈 erste Spalte breit */
+  grid-template-columns: 2.5fr 1fr; /* 👈 Hauptspalte deutlich breiter */
   gap: 1.5rem;
   align-items: start;
 }
 
-/* Allgemeine Spalten */
+/* ===== Spalten ===== */
 .column {
   background: #ffffff;
   padding: 1.25rem;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
-/* Hauptspalte optional hervorheben */
+/* Hauptspalte hervorheben */
 .column.main {
   border-left: 4px solid #2563eb;
 }
 
-/* News-Liste */
-#news {
+/* Nebeninhalt etwas ruhiger */
+.column:not(.main) {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* ===== Listen allgemein ===== */
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#news li {
+li {
   margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+/* ===== Verkehrsmeldungen ===== */
+#news li {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#news li:last-child {
+  border-bottom: none;
 }
 
 #news a {
@@ -51,7 +77,22 @@ h1 {
   text-decoration: underline;
 }
 
-/* === Responsive: untereinander auf kleinen Screens === */
+/* ===== Verkehrswissenschaft ===== */
+#science li {
+  margin-bottom: 0.6rem;
+}
+
+#science a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #065f46;
+}
+
+#science a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1000px) {
   .layout {
     grid-template-columns: 1fr;
