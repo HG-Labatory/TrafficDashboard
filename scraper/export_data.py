@@ -36,7 +36,7 @@ def export_category(category: str, output_file: Path):
                 "summary": item.summary,
                 "region": item.region,
                 "url": item.url,
-                "published_date": (item.published_date.isoformat() if item.published_date else None),
+                "published_date": (item.published_date.isoformat() if item.published_date else None), # type: ignore
             }
             for item in items
         ],

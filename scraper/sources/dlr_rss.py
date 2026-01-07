@@ -1,5 +1,6 @@
 import feedparser
 from scraper.base import BaseScraper
+from datetime import datetime
 
 
 class DLRRssScraper(BaseScraper):
@@ -13,6 +14,7 @@ class DLRRssScraper(BaseScraper):
         items = []
 
         for entry in feed.entries:
+            print(entry.keys())
             title = entry.get("title", "").strip() # type: ignore
             url = entry.get("link")
             summary = entry.get("description", "").strip()  # type: ignore
@@ -20,6 +22,18 @@ class DLRRssScraper(BaseScraper):
             if not title or not url:
                 continue
 
-            items.append({"title": title, "summary": summary, "region": "", "published_date": entry.get("pubDate"), "url": url})
+            # ✅ RICHTIGES Datum aus feedparser
+            published_parsed = entry.get("published_parsed")
+            published_date = datetime(*published_parsed[:6]) if published_parsed else None  # type: ignore
+
+            items.append(
+                {
+                    "title": title,
+                    "summary": summary,
+                    "region": "Dresden",
+                    "published_date": published_date,
+                    "url": url,
+                }
+            )
 
         return items
