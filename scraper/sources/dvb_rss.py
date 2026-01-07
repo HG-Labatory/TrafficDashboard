@@ -14,16 +14,16 @@ class DVBRssScraper(BaseScraper):
         items = []
 
         for entry in feed.entries:
-            title = entry.get("title", "").strip()
+            title = entry.get("title", "").strip() # type: ignore
             url = entry.get("link")
-            summary = entry.get("summary", "").strip()
+            summary = entry.get("summary", "").strip() # type: ignore
 
             if not title or not url:
                 continue
 
             # ✅ RICHTIGES Datum aus feedparser
             published_parsed = entry.get("published_parsed")
-            published_date = datetime(*published_parsed[:6]) if published_parsed else None
+            published_date = datetime(*published_parsed[:6]) if published_parsed else None # type: ignore
 
             items.append(
                 {
