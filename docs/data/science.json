@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-01-07T10:53:10.519102+00:00",
+  "category": "traffic_science",
+  "count": 10,
+  "items": [
+    {
+      "id": 63,
+      "title": "Studie zu Reiseerleben im Schwarzen Berg",
+      "summary": "Im Rahmen des Forschungsprojekts STADT:up werden digitale Zwillinge von Reisenden erstellt, um das Reiseverhalten, die Mobilitätspräferenzen und das subjektive Reiseerlebnis zu analysieren und zukünftige Verkehrslösungen gezielt zu optimieren. Hierfür werden Anfang November 2025 für eine Woche Probanden mit einem Forschungsfahrzeug des DLR transportiert und bewerten ihr Reiseerlebnis. Jeder Proband erhält eine App, mit der jeweils das Ankommen an der Haltestelle sowie Ein- und Ausstieg registriert werden. Dadurch entsteht ein genauer Zeit- und Standort-Datensatz für jede Reise. Während der Fahrt können die Probanden über eine mobile Feedback App kurze Bewertungen zur Reise abgeben. Die Bewertung wird mit dem jeweiligen Reisezeit verknüpft. Die gesammelten Daten werden anonymisiert gespeichert und auch zur Ausgestaltung des Angebotes im Rahmen von IMoGer verwendet.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ts/aktuelles/nachrichten/2025/studie-zu-reiseerleben-im-schwarzen-berg",
+      "published_date": null
+    },
+    {
+      "id": 62,
+      "title": "Institut für KI-Sicherheit auf der FIX 2025 in Südkorea",
+      "summary": "Vom 22. bis 23. Oktober 2025 nahm das DLR-Institut für KI-Sicherheit unter Leitung von Prof. Frank Köster an der Future Innovation Tech Expo (FIX 2025) in Daegu, Südkorea, teil. Unter dem Motto „Data Space Collaboration Daegu & EU\" präsentierten lokale Unternehmen aus dem Daten- und Dienstleistungsökosystem Daegus gemeinsam mit dem DLR neue Ansätze und Projektideen zur internationalen Zusammenarbeit.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ki/aktuelles/nachrichten/fix-2025-suedkorea",
+      "published_date": null
+    },
+    {
+      "id": 61,
+      "title": "Luftverschmutzung und Gesundheit: Probanden (m/w/d) für Machbarkeitsstudie gesucht",
+      "summary": "Wir suchen Probanden (m/w/d) mit Hauptwohnsitz in Baden-Württemberg für eine Machbarkeitsstudie zur Lebensqualität und zum Gesundheitszustand; die Datenerhebung verläuft durch regelmäßiges Ausfüllen von Fragebögen über einen Zeitraum von sechs Monaten. Die Datenaufnahme startet Anfang November 2025. Nach erfolgreicher Registrierung über den unten stehenden Link erhalten Sie per Email einen Link zu einem initialen sozio-ökonomischen Fragebogen. Danach erhalten Sie in zweiwöchigem Abstand per Email Links zu den anderen beiden Fragebögen. Nach 6 Monaten endet die Studie dann automatisch.",
+      "region": "",
+      "url": "https://www.dlr.de/de/me/aktuelles/nachrichten/2025/luftverschmutzung-und-gesundheit-probanden-m-w-d-fuer-machbarkeitsstudie-gesucht",
+      "published_date": null
+    },
+    {
+      "id": 60,
+      "title": "Wie aus Szenarien Handlungsoptionen für energiepolitische Entscheidungsprozesse werden",
+      "summary": "Im Projekt SCOPE.efzn analysieren DLR-Forschende ausgewählte Energieszenarien. Damit schaffen sie die Arbeitsgrundlage, um im weiteren Projektverlauf auf wiss. Datenbasis Handlungsoptionen ableiten zu können.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ve/aktuelles/nachrichten/archiv/2025/handlungsoptionen-fuer-energiepolitische-entscheidungsprozesse",
+      "published_date": null
+    },
+    {
+      "id": 59,
+      "title": "Studie zur Fernsteuerung von Fahrzeugen –Braucht es wirklich „Motion Feedback“?",
+      "summary": "Fahrzeuge aus der Ferne steuern: Ab dem 1. Dezember 2025 ist das in Deutschland auf öffentlichen Straßen möglich. Ab dann gilt die Straßenverkehr-Fernlenk-Verordnung (StVFernLV), die für eine praktische Erprobung von ferngelenkten Kraftfahrzeugen im öffentlichen Raum erstmalig einen Rechtsrahmen schafft.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ts/aktuelles/nachrichten/2025/studie-zur-fernsteuerung-von-fahrzeugen-braucht-es-wirklich-motion-feedback",
+      "published_date": null
+    },
+    {
+      "id": 58,
+      "title": "Dr. -Ing. Dimitrios Milakis zum sechsten Mal unter den Top-2% der Stanford-Elsevier-Rangliste",
+      "summary": "Dr. -Ing. Dimitrios Milakis wurde zum sechsten Mal in Folge unter die Top-2% der besten Wissenschaftlerinnen und Wissenschaftler der Stanford-Elsevier-Rangliste im Fachgebiet Logistik und Verkehr gelistet. Er ist seit 2018 als Wissenschaftlicher Mitarbeiter am DLR Institut für Verkehrsforschung tätig.",
+      "region": "",
+      "url": "https://www.dlr.de/de/vf/aktuelles/nachrichten/dr-ing-dimitrios-milakis-zum-sechsten-mal-unter-den-top-2-der-stanford-elsevier-rangliste",
+      "published_date": null
+    },
+    {
+      "id": 57,
+      "title": "INAIR 2025 – Luftverkehrsforschung im Dialog",
+      "summary": "Das DLR-Institut für Luftverkehr präsentierte auf der INAIR 2025 aktuelle Forschung zu zentralen Zukunftsfragen des Luftverkehrs – von Klimaschutz, Energieinfrastruktur und Ökonomie bis Quantenoptimierung.",
+      "region": "",
+      "url": "https://www.dlr.de/de/lv/aktuelles/nachrichten/inair-2025-luftverkehrsforschung-im-dialog",
+      "published_date": null
+    },
+    {
+      "id": 56,
+      "title": "Ein Schiff, zwei Systeme: Wie die Technologieplattform flexibel forscht und sicher fährt",
+      "summary": "Die Technologieplattform vereint zwei Systeme in einem: Ein Basissystem bestehend aus einer bewährten, marktreifen Energieversorgung, welche zum Baukonzept zur Ablieferung des Schiffes gehört und ein hochflexibles und modulares Forschungssystem, welches es den Wissenschaftlerinnen und Wissenschaftlern erlaubt, neuartige Energiekomponenten und Kraftstoffe im realen Schiffsbetrieb zu erforschen.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ms/aktuelles/nachrichten/ein-schiff-zwei-systeme",
+      "published_date": null
+    },
+    {
+      "id": 55,
+      "title": "Kamerabasierte Verkehrsmessung im Quartier Schwarzer Berg in Braunschweig",
+      "summary": "Das Deutsche Zentrum für Luft- und Raumfahrt (DLR) erforscht im Projekt „IMoGer“ (Innovative modulare Mobilität Made in Germany) zusammen mit Projektbeteiligten einen neuartigen autonomen und modularen Ansatz für ÖPNV und Güterverkehr auf der letzten Meile. Zur Unterstützung der Entwicklungen werden Verkehrsmessungen im Schwarzen Berg durchgeführt. In der Zeit vom 10.11.2025 bis 21.11.2025 erfolgt eine Verkehrsmessung in Übereinstimmung mit der DSGVO an verschiedenen Orten im Schwarzen Berg (siehe Karte). Dabei werden Videos über einen Zeitraum von je 3 bis 4 Stunden erhoben, verarbeitet und gespeichert. Nach der Aufnahme des Videomaterials werden Gesichter und Kennzeichen durch eine vom DLR entwickelte Software automatisch anonymisiert, so dass Ihre Privatsphäre jederzeit gewahrt ist. Auf Basis dieser Videodaten können Verkehrsereignisse erfasst und systematisch analysiert werden. Die anonymisiert zwischengespeicherten Videodaten werden nach der Auswertung der Verkehrsszenarien unverzüglich gelöscht.",
+      "region": "",
+      "url": "https://www.dlr.de/de/ts/aktuelles/nachrichten/2025/kamerabasierte-verkehrsmessung-im-quartier-schwarzer-berg-in-braunschweig",
+      "published_date": null
+    },
+    {
+      "id": 54,
+      "title": "DLR erhält 157 Millionen Euro für Betrieb der Technologieplattform Power-to-Liquid-Kraftstoffe",
+      "summary": "Das DLR hat vom Bundesministerium für Verkehr (BMV) eine weitere Förderung von 157 Millionen Euro für die Technologieplattform Power-to-Liquid-Kraftstoffe (TPP) erhalten. Bundesverkehrsminister Patrick Schnieder übergab den Förderbescheid in Anwesenheit des Ministerpräsidenten von Sachsen-Anhalt Dr. Reiner Haseloff am 25. November 2025 an das DLR.",
+      "region": "",
+      "url": "https://www.dlr.de/de/aktuelles/nachrichten/2025/dlr-erhaelt-157-millionen-euro-fuer-betrieb-der-technologieplattform-power-to-liquid-kraftstoffe",
+      "published_date": null
+    }
+  ]
+}

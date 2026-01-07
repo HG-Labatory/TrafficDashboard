@@ -1,16 +1,27 @@
-console.log("app.js geladen");
+function loadList(jsonUrl, targetId) {
+  fetch(jsonUrl)
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById(targetId);
+      list.innerHTML = "";
 
-fetch("data/news.json")
-  .then(r => r.json())
-  .then(data => {
-    const list = document.getElementById("news");
-
-    data.items.forEach(item => {
-      const li = document.createElement("li");
-      li.innerHTML = `<a href="${item.url}" target="_blank">
-        ${item.title}
-      </a>`;
-      list.appendChild(li);
+      data.items.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <a href="${item.url}" target="_blank">
+            ${item.title}
+          </a>
+        `;
+        list.appendChild(li);
+      });
+    })
+    .catch(err => {
+      console.error("Fehler beim Laden:", jsonUrl, err);
     });
-  })
-  .catch(err => console.error(err));
+}
+
+// Verkehrsmeldungen
+loadList("data/news.json", "news");
+
+// Verkehrswissenschaft
+loadList("data/science.json", "science");

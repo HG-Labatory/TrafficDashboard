@@ -4,6 +4,7 @@ from backend.db import SessionLocal
 from backend.models import TrafficItem
 
 from scraper.sources.dvb_rss import DVBRssScraper
+from scraper.sources.dlr_rss import DLRRssScraper
 
 # später: weitere Scraper importieren
 
@@ -21,8 +22,10 @@ logger = logging.getLogger(__name__)
 # --------------------------------------------------
 SCRAPERS = [
     DVBRssScraper(),
+    DLRRssScraper(),
     # später: SaechsischeRssScraper(), BMDV-RSS, …
 ]
+
 
 # --------------------------------------------------
 # 3. Hauptfunktion
@@ -30,67 +33,54 @@ SCRAPERS = [
 def main():
     logger.info("Scraping gestartet")
 
-
     db = SessionLocal()
     inserted = 0
     skipped = 0
     errors = 0
 
-    try:
-        for scraper in SCRAPERS:
-            logger.info(f"Starte Scraper: {scraper.source_name}")
+    for scraper in SCRAPERS:
+        logger.info(f"Starte Scraper: {scraper.source_name}")
 
+        try:
+            items = scraper.fetch()
+        except Exception as e:
+            logger.exception(f"Fehler beim Fetch von {scraper.source_name}")
+            errors += 1
+            continue
+
+        for item in items:
             try:
-                items = scraper.fetch()
-                logger.info(f"   → {len(items)} Einträge gefunden")
+                exists = db.query(TrafficItem).filter(TrafficItem.url == item["url"]).first()
+
+                if exists:
+                    skipped += 1
+                    continue
+
+                db.add(
+                    TrafficItem(
+                        title=item["title"],
+                        summary=item.get("summary", ""),
+                        region=item.get("region", ""),
+                        category=scraper.category,
+                        url=item["url"],
+                        published_date=item.get("published_date"),
+                    )
+                )
+
+                inserted += 1
 
             except Exception as e:
-                logger.error(f"❌ Fehler beim Scrapen von {scraper.source_name}: {e}")
+                logger.exception(f"Fehler bei Item {item.get('url')}")
                 errors += 1
-                continue
 
-            for item in items:
-                print("fehler"+item["url"])
-                try:
-                    # Prüfen, ob der Eintrag bereits existiert
-                    exists = db.query(TrafficItem).filter(TrafficItem.url == item["url"]).first()
+    db.commit()
+    db.close()
 
-                    if exists:
-                        skipped += 1
-                        continue
-
-                    db_item = TrafficItem(
-                        category=scraper.category,
-                        title=item["title"],
-                        summary=item.get("summary"),
-                        region=item.get("region"),
-                        published_date=item.get("published_date"),
-                        url=item["url"],
-                    )
-
-                    db.add(db_item)
-                    inserted += 1
-
-                except Exception as e:
-                    logger.error(f"❌ DB-Fehler bei URL {item.get('url')}: {e}")
-                    errors += 1
-
-        db.commit()
-        logger.info("💾 Änderungen erfolgreich gespeichert")
-
-    except Exception as fatal:
-        db.rollback()
-        logger.critical(f"🔥 Kritischer Fehler – Rollback: {fatal}")
-
-    finally:
-        db.close()
-        logger.info("🔒 DB-Verbindung geschlossen")
-
-        logger.info(f"✅ Fertig | Neu: {inserted}, " f"Übersprungen: {skipped}, " f"Fehler: {errors}")
+    logger.info(f"Scraping beendet | Neu: {inserted}, " f"Übersprungen: {skipped}, Fehler: {errors}")
 
 
 # --------------------------------------------------
-# 4. Einstiegspunkt
+# Einstiegspunkt
 # --------------------------------------------------
 if __name__ == "__main__":
     main()

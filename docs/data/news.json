@@ -1,81 +1,26 @@
 {
-  "generated_at": "2026-01-06T15:44:35.615416",
-  "count": 11,
+  "generated_at": "2026-01-07T10:53:10.517102+00:00",
+  "category": "traffic_news",
+  "count": 10,
   "items": [
     {
-      "id": 1,
-      "title": "Test Baustelle A1",
-      "summary": null,
-      "region": "NRW",
-      "url": "https://test.de",
-      "published_date": null
-    },
-    {
-      "id": 2,
-      "title": "13.06.2024 - Straßenbauarbeiten auf der Lockwitztalstraße",
-      "summary": "<p>Das Straßen- und Tiefbauamt der Landeshauptstadt Dresden sowie städtische Versorgungsunternehmen erneuern die Lockwitztalstraße zwischen Dohnaer Straße und Schongauer Straße. Daher fährt die Buslinie 89 bis auf Weiteres nicht wie gewohnt. Sie wird bis zum Ende der Baumaßnahme mit der Buslinie 88 verknüpft. Die Haltestellen Sosaer Straße, Dorfstraße und Bedrich-Smetana-Straße können nicht bedient werden. </p>",
+      "id": 43,
+      "title": "07.01.2026 - Bauarbeiten Gleistrasse Gorbitz",
+      "summary": "<p>Auf der Gleistrasse Gorbitz werden die Fahrleitung, Weichen und Gleise repariert. Die Bauarbeiten werden von Montag, den 12. Januar 2026, 7:30 Uhr bis Montag, den 26. Januar 2026, 3 Uhr in drei Bauphasen durchgeführt. Die Linien 2 und 7 fahren nur verkürzt, ab der Julius-Vahlteich-Straße wird ein Ersatzverkehr nach Gorbitz und Pennrich eingerichtet. Bitte informieren Sie sich hier über die konkreten Änderungen während der drei Bauphasen.</p>",
       "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/bau-lockwitztalstrasse_24-25",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/bau-gleistrasse-gorbitz_jan26",
       "published_date": null
     },
     {
-      "id": 3,
-      "title": "09.04.2025 - Gleisbau auf der Lübecker Straße",
-      "summary": "<p>Ab dem 14. April 2025 beginnen die umfangreichen Sanierungsarbeiten in der Lübecker Straße, um die Gleisanlagen und Infrastruktur nachhaltig zu verbessern. Die Bauarbeiten erfolgen in mehreren Phasen und sollen voraussichtlich bis zum 14. Februar 2026 abgeschlossen sein. Bitte informieren Sie sich hier über die verkürzte Linienführung der 12 und den Ersatzverkehr nach Leutewitz.</p>",
+      "id": 42,
+      "title": "06.01.2026 - Mit Bahn und Bus zum Winter Game 2026",
+      "summary": "<p>Am 10. Januar 2026 wird im Rudolf-Harbig-Stadion das DEL WINTER GAME 2026 ausgetragen. In einem historischen Duell treffen die Dresdner Eislöwen auf die Eisbären Berlin. Ihre Eintrittskarte ist gleichzeitig Ihre Fahrkarte für Straßenbahn und Bus, die Linien 1, 10, 11 und 13 fahren verstärkt. Bitte beachten Sie die veränderten Anreise- und Abreisebedingungen aufgrund der Vollsperrung des Dresdner Hauptbahnhofs.</p>",
       "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/bau-luebecker-strasse-2025",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/anreise-wintergame-2026",
       "published_date": null
     },
     {
-      "id": 4,
-      "title": "20.10.2025 - Herbstzeit ist Museumszeit!",
-      "summary": "<p>Für unsere Stammkundschaft haben wir ein besonderes Angebot: Besuchen Sie doch mal wieder die Museen der Stadt und sparen Sie beim Vorzeigen Ihrer DVB-Abo-Karte! Erleben Sie die Geschichte der Porzellan-Manufaktur Meissen in der zweiten Hälfte des 20. Jahrhunderts im Japanischen Palais – bei der Ausstellung <strong>„Die blauen Schwerter“</strong> erhalten Sie bis zum 22. Februar 2026 einen Euro Rabatt auf den Eintrittspreis.<br />\n<em>Foto: © Stadtmuseum Meißen, Gerhard Weber</em></p>",
-      "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/abo-rabatt-blaue-schwerter",
-      "published_date": null
-    },
-    {
-      "id": 5,
-      "title": "24.11.2025 - Preiserhöhung Deutschlandticket",
-      "summary": "<p>Ab dem 1. Januar 2026 wird das Deutschlandticket auf 63 Euro erhöht. Für Inhabende des Deutschlandtickets als Jobticket erhöht sich der Preis damit auf maximal 44,10 Euro; für Inhabende mit Dresden-Pass auf 40,95 Euro. Das Deutschlandticket bleibt weiterhin ein attraktives und günstiges Angebot für Ihre Fahrten in ganz Deutschland. <strong>Möchten Sie das Ticket weiter nutzen, müssen Sie nichts unternehmen.</strong> Sofern Sie die Preisanpassung nicht akzeptieren, kündigen Sie das Ticket bitte bis spätestens zum 10. Dezember 2025.</p>",
-      "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/preisanpassung-d-ticket-2026",
-      "published_date": null
-    },
-    {
-      "id": 6,
-      "title": "27.11.2025 - Weihnachtsstimmung im Christmas Garden",
-      "summary": "<p>Begeben Sie sich auf eine magische Reise und lassen Sie sich vom weihnachtlichen Lichterglanz verzaubern! Bis zum 11. Januar 2026 lädt Sie der Christmas Garden Dresden wieder zum Spaziergang durch den erleuchtenden Schlosspark Pillnitz ein. Und das Beste: Alle mit einem DVB-Abo und deren Begleitperson erhalten bei der Onlinebuchung 10 Prozent Rabatt auf den Eintrittspreis. Wie das geht, erfahren Sie hier.<br />\n<em>Foto: © Michael Clemens</em></p>",
-      "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/christmas-garden-2025",
-      "published_date": null
-    },
-    {
-      "id": 7,
-      "title": "04.12.2025 - Neue Fahrpreise im VVO ab 1. April 2026",
-      "summary": "<p>Zum 1. April 2026 erhöhen sich im Verkehrsverbund Oberelbe (VVO) die Preise. Im Preis stabil bleiben u. a. das BildungsTicket, die Fahrpreise für Fähren und Dresdner Bergbahnen, das Zusatzticket Plus MOBI und das Schülergruppenticket. Zudem entfallen das Nachtticket und die 9-Uhr-Monatskarte. Steigende Lohnkosten in Folge neuer Tarifabschlüsse, die alle Verkehrsunternehmen im VVO zu verzeichnen haben, machen eine Anhebung der Fahrpreise um durchschnittlich 3,3 Prozent notwendig.&nbsp;</p>",
-      "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/tarifanpassung-april-26",
-      "published_date": null
-    },
-    {
-      "id": 8,
-      "title": "04.12.2025 - Ein Verkehrsverbund für Ostsachsen",
-      "summary": "<p>Die Verbandsversammlung des ZVOE hat am 4. Dezember 2025 den Zusammenschluss vom Verkehrsverbund Oberelbe (VVO) mit dem benachbarten Verkehrsverbund Ober­lausitz-Nieder­schlesien (ZVON) beschlossen. Der neue Zweck­­verband Verkehrsverbund Ostsachsen (ZVVO) wird am 1. Januar 2026 seine Tätigkeit aufnehmen. Damit wächst die Region zwischen Elbe und Neiße zusammen. Ziel ist es, zukünftig mit einem Ticket durch ganz Ostachsen fahren zu können und ein einheitliches Tarifsystem zu entwickeln. <strong>Vorerst bleiben der VVO-Tarif und der ZVON-Tarif aber in ihrer bekannten Form bestehen, für Fahrgäste ändert sich noch nichts.</strong> Weitere Fragen zur Fusion beantwortet Ihnen der VVO hier.</p>",
-      "region": "Dresden",
-      "url": "https://www.vvo-online.de/de/9955.cshtml",
-      "published_date": null
-    },
-    {
-      "id": 9,
-      "title": "18.12.2025 - Neues im Liniennetz ab 5. Januar 2026",
-      "summary": "<p>Ab dem 5. Januar 2026 gilt in unserem Liniennetz der neue Jahresfahrplan. Mit dem Fahrplanwechsel gibt es geringfügige Anpassungen an den Abfahrtszeiten, bitte prüfen Sie im neuen Jahr daher die Aktualität Ihrer gewohnten Verbindungen.&nbsp;<strong><br />\nZudem treten Änderungen an den Streckenverläufen der Linien 10 und 87 in Kraft:</strong> Die Linie 10 hält am Bahnhof Mitte künftig an den Steigen 3 und 4 in der Könneritzstraße, die Haltestellen in der Jahnstraße werden nicht mehr bedient. Die Linie 87 endet mit Betriebsbeginn am 5. Januar bereits in Tolkewitz, der Abschnitt Lengefelder Straße – Emanuel-Goldberg-Platz entfällt.</p>",
-      "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/linien-10-und-87-ab-2026",
-      "published_date": null
-    },
-    {
-      "id": 10,
+      "id": 41,
       "title": "23.12.2025 - Vollsperrung Hauptbahnhof Dresden",
       "summary": "<p>Aufgrund von Bauarbeiten ist der Dresdner Hauptbahnhof von Freitag, den 9. Januar 2026, 4 Uhr bis Montag, den 12. Januar 2026, 4 Uhr für den Zugverkehr gesperrt. Züge starten bzw. enden in Dresden-Reick, Dresden-Neustadt, Dresden-Plauen oder Friedrichstadt. Bitte nutzen Sie stattdessen den bestehenden Linienverkehr (z. B. Linie 3), den Schienenersatzverkehr per Bus sowie den Ersatzverkehr mit der Straßenbahnlinie 26. Weitere Informationen finden Sie auf der Website vom VVO.</p>",
       "region": "Dresden",
@@ -83,11 +28,59 @@
       "published_date": null
     },
     {
-      "id": 11,
-      "title": "06.01.2026 - Mit Bahn und Bus zum Winter Game 2026",
-      "summary": "<p>Am 10. Januar 2026 wird im Rudolf-Harbig-Stadion das DEL WINTER GAME 2026 ausgetragen. In einem historischen Duell treffen die Dresdner Eislöwen auf die Eisbären Berlin. Ihre Eintrittskarte ist gleichzeitig Ihre Fahrkarte für Straßenbahn und Bus, die Linien 1, 10, 11 und 13 fahren verstärkt. Bitte beachten Sie die veränderten Anreise- und Abreisebedingungen aufgrund der Vollsperrung des Dresdner Hauptbahnhofs.</p>",
+      "id": 40,
+      "title": "18.12.2025 - Neues im Liniennetz ab 5. Januar 2026",
+      "summary": "<p>Ab dem 5. Januar 2026 gilt in unserem Liniennetz der neue Jahresfahrplan. Mit dem Fahrplanwechsel gibt es geringfügige Anpassungen an den Abfahrtszeiten, bitte prüfen Sie im neuen Jahr daher die Aktualität Ihrer gewohnten Verbindungen.&nbsp;<strong><br />\nZudem treten Änderungen an den Streckenverläufen der Linien 10 und 87 in Kraft:</strong> Die Linie 10 hält am Bahnhof Mitte künftig an den Steigen 3 und 4 in der Könneritzstraße, die Haltestellen in der Jahnstraße werden nicht mehr bedient. Die Linie 87 endet mit Betriebsbeginn am 5. Januar bereits in Tolkewitz, der Abschnitt Lengefelder Straße – Emanuel-Goldberg-Platz entfällt.</p>",
       "region": "Dresden",
-      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/anreise-wintergame-2026",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/linien-10-und-87-ab-2026",
+      "published_date": null
+    },
+    {
+      "id": 39,
+      "title": "04.12.2025 - Ein Verkehrsverbund für Ostsachsen",
+      "summary": "<p>Die Verbandsversammlung des ZVOE hat am 4. Dezember 2025 den Zusammenschluss vom Verkehrsverbund Oberelbe (VVO) mit dem benachbarten Verkehrsverbund Ober­lausitz-Nieder­schlesien (ZVON) beschlossen. Der neue Zweck­­verband Verkehrsverbund Ostsachsen (ZVVO) wird am 1. Januar 2026 seine Tätigkeit aufnehmen. Damit wächst die Region zwischen Elbe und Neiße zusammen. Ziel ist es, zukünftig mit einem Ticket durch ganz Ostachsen fahren zu können und ein einheitliches Tarifsystem zu entwickeln. <strong>Vorerst bleiben der VVO-Tarif und der ZVON-Tarif aber in ihrer bekannten Form bestehen, für Fahrgäste ändert sich noch nichts.</strong> Weitere Fragen zur Fusion beantwortet Ihnen der VVO hier.</p>",
+      "region": "Dresden",
+      "url": "https://www.vvo-online.de/de/9955.cshtml",
+      "published_date": null
+    },
+    {
+      "id": 38,
+      "title": "04.12.2025 - Neue Fahrpreise im VVO ab 1. April 2026",
+      "summary": "<p>Zum 1. April 2026 erhöhen sich im Verkehrsverbund Oberelbe (VVO) die Preise. Im Preis stabil bleiben u. a. das BildungsTicket, die Fahrpreise für Fähren und Dresdner Bergbahnen, das Zusatzticket Plus MOBI und das Schülergruppenticket. Zudem entfallen das Nachtticket und die 9-Uhr-Monatskarte. Steigende Lohnkosten in Folge neuer Tarifabschlüsse, die alle Verkehrsunternehmen im VVO zu verzeichnen haben, machen eine Anhebung der Fahrpreise um durchschnittlich 3,3 Prozent notwendig.&nbsp;</p>",
+      "region": "Dresden",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/tarifanpassung-april-26",
+      "published_date": null
+    },
+    {
+      "id": 37,
+      "title": "27.11.2025 - Weihnachtsstimmung im Christmas Garden",
+      "summary": "<p>Begeben Sie sich auf eine magische Reise und lassen Sie sich vom weihnachtlichen Lichterglanz verzaubern! Bis zum 11. Januar 2026 lädt Sie der Christmas Garden Dresden wieder zum Spaziergang durch den erleuchtenden Schlosspark Pillnitz ein. Und das Beste: Alle mit einem DVB-Abo und deren Begleitperson erhalten bei der Onlinebuchung 10 Prozent Rabatt auf den Eintrittspreis. Wie das geht, erfahren Sie hier.<br />\n<em>Foto: © Michael Clemens</em></p>",
+      "region": "Dresden",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/christmas-garden-2025",
+      "published_date": null
+    },
+    {
+      "id": 36,
+      "title": "24.11.2025 - Preiserhöhung Deutschlandticket",
+      "summary": "<p>Ab dem 1. Januar 2026 wird das Deutschlandticket auf 63 Euro erhöht. Für Inhabende des Deutschlandtickets als Jobticket erhöht sich der Preis damit auf maximal 44,10 Euro; für Inhabende mit Dresden-Pass auf 40,95 Euro. Das Deutschlandticket bleibt weiterhin ein attraktives und günstiges Angebot für Ihre Fahrten in ganz Deutschland. <strong>Möchten Sie das Ticket weiter nutzen, müssen Sie nichts unternehmen.</strong> Sofern Sie die Preisanpassung nicht akzeptieren, kündigen Sie das Ticket bitte bis spätestens zum 10. Dezember 2025.</p>",
+      "region": "Dresden",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/preisanpassung-d-ticket-2026",
+      "published_date": null
+    },
+    {
+      "id": 35,
+      "title": "20.10.2025 - Herbstzeit ist Museumszeit!",
+      "summary": "<p>Für unsere Stammkundschaft haben wir ein besonderes Angebot: Besuchen Sie doch mal wieder die Museen der Stadt und sparen Sie beim Vorzeigen Ihrer DVB-Abo-Karte! Erleben Sie die Geschichte der Porzellan-Manufaktur Meissen in der zweiten Hälfte des 20. Jahrhunderts im Japanischen Palais – bei der Ausstellung <strong>„Die blauen Schwerter“</strong> erhalten Sie bis zum 22. Februar 2026 einen Euro Rabatt auf den Eintrittspreis.<br />\n<em>Foto: © Stadtmuseum Meißen, Gerhard Weber</em></p>",
+      "region": "Dresden",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/abo-rabatt-blaue-schwerter",
+      "published_date": null
+    },
+    {
+      "id": 34,
+      "title": "09.04.2025 - Gleisbau auf der Lübecker Straße",
+      "summary": "<p>Ab dem 14. April 2025 beginnen die umfangreichen Sanierungsarbeiten in der Lübecker Straße, um die Gleisanlagen und Infrastruktur nachhaltig zu verbessern. Die Bauarbeiten erfolgen in mehreren Phasen und sollen voraussichtlich bis zum 14. Februar 2026 abgeschlossen sein. Bitte informieren Sie sich hier über die verkürzte Linienführung der 12 und den Ersatzverkehr nach Leutewitz.</p>",
+      "region": "Dresden",
+      "url": "https://www.dvb.de/de-de/meta/aktuelle-meldungen/bau-luebecker-strasse-2025",
       "published_date": null
     }
   ]
