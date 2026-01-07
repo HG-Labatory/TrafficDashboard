@@ -11,6 +11,9 @@ function loadList(jsonUrl, targetId) {
           <a href="${item.url}" target="_blank">
             ${item.title}
           </a>
+          <div class="summary">
+            ${item.summary || ""}
+          </div>
         `;
         list.appendChild(li);
       });
