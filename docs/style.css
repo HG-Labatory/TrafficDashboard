@@ -20,7 +20,7 @@ h2 {
 /* Layout */
 .layout {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   align-items: start;
 }
